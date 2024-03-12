@@ -23,7 +23,7 @@ export default function Sidebar() {
     setIsOpen(!isOpen);
   };
   return (
-    <div>
+    <>
       <button
         onClick={toggleSidebar}
         data-drawer-target="logo-sidebar"
@@ -50,8 +50,8 @@ export default function Sidebar() {
       <aside
         ref={sidebarRef}
         id="logo-sidebar"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
-          isOpen ? "" : "-translate-x-full sm:translate-x-0"
+        className={`h-screen transition-transform ${
+          isOpen ? "" : "-translate-x-full sm:-translate-x-0"
         }`}
         aria-label="Sidebar"
       >
@@ -70,7 +70,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="ms-3">Dashboard</span>
               </a>
@@ -79,7 +79,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Chats</span>
                 <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-slate-800 bg-rose-500 rounded-full dark:bg-rose-900 dark:hover:bg-slate-100 dark:hover:text-slate-900 dark:text-white">
@@ -90,7 +90,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Users</span>
               </a>
@@ -98,7 +98,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Products</span>
               </a>
@@ -106,7 +106,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Leads</span>
               </a>
@@ -114,7 +114,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Contacts</span>
               </a>
@@ -122,7 +122,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Setting</span>
               </a>
@@ -130,7 +130,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Helps</span>
               </a>
@@ -139,7 +139,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-800 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
+                className="flex items-center p-2 active:bg-blue-700 active:text-white text-gray-900 rounded-lg hover:bg-blue-700 hover:text-slate-100 dark:text-white dark:hover:bg-blue-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">Logout</span>
               </a>
@@ -150,6 +150,6 @@ export default function Sidebar() {
           </ul>
         </div>
       </aside>
-    </div>
+    </>
   );
 }

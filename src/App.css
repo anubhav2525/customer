@@ -1,4 +1,47 @@
 * {
-      margin: 0;
-      padding: 0;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  overflow-x: hidden;
+}
+.sidebar {
+  min-width: 15%;
+  min-height: 100vh;
+}
+.page-area {
+  padding: 30px;
+  min-width: 84%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    min-width: 18%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sidebar {
+    min-width: 20%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .page-area {
+    position: absolute;
+    top: 40px;
+  }
+  .sidebar aside {
+    min-width: 50%;
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
 }
